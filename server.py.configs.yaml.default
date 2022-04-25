@@ -1,0 +1,12 @@
+nodes:
+  n1: 40
+  n2: 40
+
+port: 23456
+cmd_prefix: ''
+debug: 0
+
+
+JOBpickle: /home/user/ssh/server.py.configs.yaml.default.pickle
+
+ZZJOBS_INIT: 1
