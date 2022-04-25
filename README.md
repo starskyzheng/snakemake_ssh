@@ -24,5 +24,5 @@ By using this script, you can also run Snakemake in SSH-cluster.
   STDOUT, STDERR and retcode can be found in `server.py.configs.yaml.default.pickle` (can be changed in config.yaml)  
   Here are some script you can use: `view_jobs.sh` and `view_jobs.py`.   
   Try `view_jobs.sh` first. This script based on ipython, which requires users know basic usage of python.  
-  Never try to modifiy `server.py.configs.yaml.default.pickle` when server is running.  
+  Never try to modifiy `server.py.configs.yaml.default.pickle` when server is running. Treated as read-only file.  
   
