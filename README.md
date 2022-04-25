@@ -7,13 +7,14 @@ By using this script, you can also run Snakemake in SSH-cluster.
   git clone https://github.com/StarSkyZheng/snakemake_ssh.git ~/.config/snakemake/ssh
   
 ## Usage
-### 1. Run server
+### 1. Run snakemake_ssh server
   cd ~/.config/snakemake/ssh  
   ./server.py -c server.py.configs.yaml.default  
 ### 2. Run snakemake
   cd WORKDIR_WITH_Snakefile  
   snakemake  --profile ssh ......parameters.......  
   **Note: when you force kill the server, jobs running in each nodes may not stop, which means you have to manually check and killed for each node.**  
+  **Note: Must be the same node with the snakemake_ssh server in default settings.**  
   
 ## Config server and nodes
   Nodes and CPUs were defined in server.py.configs.yaml.default  
