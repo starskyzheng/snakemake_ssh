@@ -11,6 +11,7 @@ Snakemake for multiple nodes by SSH connection
 ### 2. Run snakemake
   cd WORKDIR_WITH_Snakefile  
   snakemake  --profile ssh ......parameters.......  
+  Note: when you force kill the server, jobs running in each nodes may not stop, which means you have to manually check and killed for each node.
   
 ## Config server and nodes
   Nodes and CPUs were defined in server.py.configs.yaml.default  
@@ -18,8 +19,8 @@ Snakemake for multiple nodes by SSH connection
   Default port is 23456, which is changeable. Must be same between config.yaml, ssh-status.py and ssh_utils.py  
 
 ## Check jobs status
-  STDOUT, STDERR and retcode can be found in `server.py.configs.yaml.default.pickle` (can be changed in config.yaml)
-  Here are some script you can use: `view_jobs.sh` and `view_jobs.py`. 
-  Try `view_jobs.sh` first. This script based on ipython, which requires users know basic usage of python.
-  Never try to modifiy `server.py.configs.yaml.default.pickle` when server is running.
+  STDOUT, STDERR and retcode can be found in `server.py.configs.yaml.default.pickle` (can be changed in config.yaml)  
+  Here are some script you can use: `view_jobs.sh` and `view_jobs.py`.   
+  Try `view_jobs.sh` first. This script based on ipython, which requires users know basic usage of python.  
+  Never try to modifiy `server.py.configs.yaml.default.pickle` when server is running.  
   
