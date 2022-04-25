@@ -20,6 +20,7 @@ By using this script, you can also run Snakemake in SSH-cluster.
   Nodes and CPUs were defined in server.py.configs.yaml.default  
   Nodes and CPUs can be changed even when server is running. Deleted node will not get new jobs, but the existed running job will not be killed.  
   Default port is 23456, which is changeable. Must be same between config.yaml, ssh-status.py and ssh_utils.py  
+  Note: Currently, only CPU resources were supported. Not support Mem resources limitation.
 
 ## Check jobs status
   STDOUT, STDERR and retcode can be found in `server.py.configs.yaml.default.pickle` (can be changed in config.yaml)  
