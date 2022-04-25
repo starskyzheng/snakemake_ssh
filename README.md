@@ -1,5 +1,7 @@
 # snakemake_ssh
-Snakemake for multiple nodes by SSH connection
+**Snakemake for multiple nodes by using SSH connections**  
+Snakemake in Slurm/LSF/BSUB cluster is officially supported.  
+By using this script, you can also run Snakemake in SSH-cluster.  
 
 ## Install
   git clone https://github.com/StarSkyZheng/snakemake_ssh.git ~/.config/snakemake/ssh
@@ -11,7 +13,7 @@ Snakemake for multiple nodes by SSH connection
 ### 2. Run snakemake
   cd WORKDIR_WITH_Snakefile  
   snakemake  --profile ssh ......parameters.......  
-  Note: when you force kill the server, jobs running in each nodes may not stop, which means you have to manually check and killed for each node.
+  **Note: when you force kill the server, jobs running in each nodes may not stop, which means you have to manually check and killed for each node.**  
   
 ## Config server and nodes
   Nodes and CPUs were defined in server.py.configs.yaml.default  
